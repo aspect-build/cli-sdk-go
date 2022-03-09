@@ -7,7 +7,7 @@ gomock(
     name = "mock_plugin_source",
     out = "mock_plugin_test.go",
     interfaces = ["Plugin"],
-    library = "//pkg/plugin/sdk/plugin",
+    library = "//pkg/plugin",
     package = "mock",
     visibility = ["//visibility:private"],
 )
@@ -21,9 +21,9 @@ go_library(
     importpath = "aspect.build/cli-sdk-go/pkg/plugin/mock",
     visibility = ["//visibility:public"],
     deps = [
-        "//bazel/buildeventstream/proto",  # keep
-        "//pkg/ioutils",  # keep
-        "//pkg/plugin/sdk/plugin",  # keep
+        "//pkg/plugin",  # keep
+        "@build_aspect_cli//bazel/buildeventstream/proto",  # keep
+        "@build_aspect_cli//pkg/ioutils",  # keep
         "@com_github_golang_mock//gomock",  # keep
     ],
 )

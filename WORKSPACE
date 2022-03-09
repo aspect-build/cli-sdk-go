@@ -4,10 +4,10 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
     name = "build_aspect_cli",
-    sha256 = "6293918e5c309c465ade32e1f3a79a8d1070ce7b9946facacb19d3b40137e1b0",
-    strip_prefix = "aspect-cli-200c83a2d2437a969bf05ad7d7944ccd68c1548a",
+    sha256 = "e4537555a8182e89f27ecf28e0d3a1eb572975bd4b1b2d895f924a57a0023d40",
+    strip_prefix = "aspect-cli-0.2.1",
     urls = [
-        "https://github.com/aspect-build/aspect-cli/archive/200c83a2d2437a969bf05ad7d7944ccd68c1548a.zip",
+        "https://github.com/aspect-build/aspect-cli/archive/refs/tags/v0.2.1.zip",
     ],
 )
 
